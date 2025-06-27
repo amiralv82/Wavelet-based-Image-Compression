@@ -1,5 +1,5 @@
 # Wavelet-based-Image-Compression
-This project demonstrates **image compression** using **Discrete Wavelet Transform (DWT) with configurable hard thresholding. The method reduces the image file size while attempting to preserve its visual quality.
+This project demonstrates **image compression** using **Discrete Wavelet Transform (DWT)** with configurable hard thresholding. The method reduces the image file size while attempting to preserve its visual quality.
 
 ## Overview
 
@@ -28,19 +28,19 @@ Install the required packages via pip:
 
 ```bash
 pip install numpy matplotlib opencv-python PyWavelets
+```
 
-
-⸻
+---
 
 ▶ How to Run
-	1.	Place your grayscale image (e.g. lena30.jpg, 4K.jpg) in the same directory.
-	2.	Run the Python script:
+1.	Place your grayscale image (e.g. lena30.jpg, 4K.jpg) in the same directory.
+2.	Run the Python script:
 
 python wavelet_compression.py
 
-	3.	You’ll see original and compressed images side by side, along with the compression statistics printed to the terminal.
+3.	You’ll see original and compressed images side by side, along with the compression statistics printed to the terminal.
 
-⸻
+---
 
  Example Output
 
@@ -53,22 +53,22 @@ Original	Threshold = 8	Threshold = 32
 		
 
 
-⸻
+---
 
- How It Works
-	1.	Wavelet Decomposition: The image is decomposed into approximation and detail coefficients using DWT.
-	2.	Thresholding: Coefficients with absolute values below a set threshold are zeroed.
-	3.	Reconstruction: The image is reconstructed from the modified coefficients.
-	4.	Compression Ratio: File sizes before and after compression are compared.
+How It Works?
+1.	Wavelet Decomposition: The image is decomposed into approximation and detail coefficients using DWT.
+2.	Thresholding: Coefficients with absolute values below a set threshold are zeroed.
+3.	Reconstruction: The image is reconstructed from the modified coefficients.
+4.	Compression Ratio: File sizes before and after compression are compared.
 
-⸻
+---
 
  Parameters to Tune
-	•	wavelet type: 'haar', 'db1', 'db2', etc.
-	•	level: Decomposition level (default is 2)
-	•	threshold: The cutoff for discarding coefficients
+•	wavelet type: 'haar', 'db1', 'db2', etc.
+•	level: Decomposition level (default is 2)
+•	threshold: The cutoff for discarding coefficients
 
-⸻
+---
 
 
 Author
